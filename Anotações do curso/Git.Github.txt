@@ -58,7 +58,7 @@ CLONANDO REPOSITORIO SSH: GIT BASH $ git clone colar o SSH , após mendagem dar 
 TOKEN:Ir em DEVELOPER SETTINGS
       Depois PERSONAL ACESS TOKENS
       GENERATE NEW TOKEN - dar nome marcar repo.
-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
+      Copiar o token e guarda em um lugar seguro.
                 
 CLONANDO REPOSITÓRIO TOKENS: copiar HTTPS GITHUB, no GIT BASH ir em uma pasta reservada onde você quer clonar.
                              $ git clone colar HTTPS enter, ele vai pedir para colocar o token do GITHUB
