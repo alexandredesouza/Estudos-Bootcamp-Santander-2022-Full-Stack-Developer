@@ -8,7 +8,7 @@ Comandos de navegação:DIR: para poder listar, se situar dentro do sistema oper
                       RMDIR: remover pastas(repositórios), com todas as patas que estão lá dentro. S/ Q/ para deletar.
                       SETA PARA CIMA: retornar para o trabalho que acabou de executar
 
-Objetos Fundamentais:
+Objetos Fundamentais: Baixar GIT(https://git-scm.com/download/win)
 
            BLOBS
            TREES
