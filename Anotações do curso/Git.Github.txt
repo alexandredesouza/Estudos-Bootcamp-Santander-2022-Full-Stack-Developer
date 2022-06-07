@@ -43,7 +43,9 @@ PRIMEIRO PASSO: GIT BASH $ ssh-keygen -t ed25519 -C alexandreluizdesouza220@gmai
 SEGUNDO PASSO: GIT BASH procurar pasta.
                $ cd /c/Users/alexa/.ssh/
                $ ls
-               $ cat id_25519.pub - gerar chave para pasta PUB, copiar e colar no GITHUB
+               $ cat id_25519.pub - gerar chave para pasta PUB
+               Ir ao Github barra de perfil opção SETTINGS, depois em ACCESS opção SSH and GPG keys, 
+                depois NEW SSH key colocar nome da chave colar link gerado no GIT BASH.
 
 TERCEIRO PASSO: Iniciar o SSH eigen, entidade que vai ficar encarregada de pegar as chaves e lidar com elas.
                 $ eval $(ssh-agent -s)
