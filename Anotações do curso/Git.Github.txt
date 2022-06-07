@@ -1,42 +1,32 @@
-Comandos de navegação:
-
-DIR: para poder listar, se situar dentro do sistema operacional, entender onde esta.
-
-CD/: permite que navegue entre pastas , é igual para todos sistema operacionais.
-
-CD winddows: traz todas as pastas que estão no windows.
-
-CD..: retorna um nível na navegação.
-
-CLS: limpar a tela.
-
-MKDIR: Criar pasta.
-
-Del: deletar arquivos nas pastas.
-
-RMDIR: remover pastas(repositórios), com todas as patas que estão lá dentro. S/ Q/ para deletar.
-
-SETA PARA CIMA: retornar para o trabalho que acabou de executar
+Comandos de navegação:DIR: para poder listar, se situar dentro do sistema operacional, entender onde esta.
+                      CD/: permite que navegue entre pastas , é igual para todos sistema operacionais.
+                      CD winddows: traz todas as pastas que estão no windows.
+                      CD..: retorna um nível na navegação.
+                      CTRL: limpar a tela.
+                      MKDIR: Criar pasta.
+                      DEL: deletar arquivos nas pastas.
+                      RMDIR: remover pastas(repositórios), com todas as patas que estão lá dentro. S/ Q/ para deletar.
+                      SETA PARA CIMA: retornar para o trabalho que acabou de executar
 
 Objetos Fundamentais:
 
-BLOBS
-TREES
-COMMITS
+           BLOBS
+           TREES
+          COMMITS
 
-BLOBS: contém metadados do GIT, que são tipo do obejtos, o tamanho da Strin, o tamanho do arquivo entre outros.
-Bloco básico de composição.
+         BLOBS: contém metadados do GIT, que são tipo do obejtos, o tamanho da Strin, o tamanho do arquivo entre outros.
+         Bloco básico de composição.
 
-TREES: responsável por montar toda estrutura que está os arquivos, aponta para as BLOBS.
+         TREES: responsável por montar toda estrutura que está os arquivos, aponta para as BLOBS.
 
-COMMIT:É o que vai juntar tudo, que vai dar sentido para o que você está fazendo,aponta para o TREES, para o PARENTE,
-para um autor e mensagem
+         COMMIT:É o que vai juntar tudo, que vai dar sentido para o que você está fazendo,aponta para o TREES, para o PARENTE,
+         para um autor e mensagem
 
-CHAVESSH e TOKENS
+         CHAVESSH e TOKENS
 
-CHAVESSH:É uma forma de estabelecer uma conexão segura entre duas maquinas
+         CHAVESSH:É uma forma de estabelecer uma conexão segura entre duas maquinas.
 
-Criando chave:
+         Criando chave:
 
 PRIMEIRO PASSO: GIT BASH $ ssh-keygen -t ed25519 -C alexandreluizdesouza220@gmail.com
 
@@ -55,7 +45,9 @@ TERCEIRO PASSO: Iniciar o SSH eigen, entidade que vai ficar encarregada de pegar
 
 CLONANDO REPOSITORIO SSH: GIT BASH $ git clone colar o SSH , após mendagem dar YES, LS para ver se clonou.
 
-TOKEN:Ir em DEVELOPER SETTINGS
+TOKEN: É usado no lugar da senha da sua conta ao executar operações pela linha de comando .
+
+      Ir em DEVELOPER SETTINGS
       Depois PERSONAL ACESS TOKENS
       GENERATE NEW TOKEN - dar nome marcar repo.
       Copiar o token e guarda em um lugar seguro.
@@ -63,30 +55,34 @@ TOKEN:Ir em DEVELOPER SETTINGS
 CLONANDO REPOSITÓRIO TOKENS: copiar HTTPS GITHUB, no GIT BASH ir em uma pasta reservada onde você quer clonar.
                              $ git clone colar HTTPS enter, ele vai pedir para colocar o token do GITHUB
 
-INICIANDO O GIT E CRIANDO UM COMMIT: Ir na pasta workspace no diretório C e abrir o GIT BASH
+INICIANDO O GIT E CRIANDO UM COMMIT: Vamos criar uma pasta no diretório C:/ com o nome de Workspace
+                                     Ir na pasta Workspace no diretório C:/ abrir o GIT BASH.
                                      $ls para mostrar as pastas
-                                     $ entrar na pasta workspace(CD)
+                                     $ entrar na pasta (CD)
                                      $ ctrl L para limpar tudo
-                                     $ mkdir livro-receitas
-                                     $ cd livro-receitas/ iniciar a pasta 
+                                     $ mkdir livro-receitas, para criar outra pasta dentro de Worspace
+                                     $ cd livro-receitas, para iniciar a pasta 
                                      $ git init - para iniciar o git dentro da pasta e versonilizar o código.
-                                     $ ls -a, para ver pasta oculta do git criada dentro da pasta livro de receitas.
+                                     $ ls -a, para ver pasta oculta do git criada dentro da pasta criada.
                                      $ git config --global user.email "email", para criar o primeiro COMMIT.
-                                     $ git config --global user.name Perkles
+                                     $ git config --global user.name 
 
 COMMITAR: $ git add *
           $ git commit -m "mensagem de texo(hora, autor etc..) "
 
 CICLO DE VIDA DOS ARQUIVOS COM GIT:$ git status, ele vai dizer como está o estado do arquivo(modifield, stage).
 
-Criar uma pasta receitas, : $ mkdir receitas
-                            $ mv Strogonoff.md ./receitas/, para mover arquivo Strogonoff para dentro da pasta receitas
-                            $ git add Strogonoff.md receitas/, para tirar Untracked, e preparar para commitar.
-                            $ git commit -m "cria pasta receitas"
-                            $ git status, visualizar se deu certo
+Vamos criar outra pasta : $ mkdir receitas
+                          $ entrar na pasta (CD)
+                          $ ctrl L para limpar tudo
+                          Vamos criar uma receita de Strogonoff em MARKDOWN                         
+                          $ mv Strogonoff.md ./receitas/, para mover arquivo Strogonoff para dentro da pasta receitas
+                          $ git add Strogonoff.md receitas/, para tirar Untracked, e preparar para commitar.
+                          $ git commit -m "cria pasta receitas"
+                          $ git status, visualizar se deu certo
 
 
-Add Index para lista de receitas: CTRL L, para limpar
+Add README.md para lista de receitas: CTRL L, para limpar
                                   $ ls, para mostrar pasta receitas.
                                   $ echo > README.md
                                   $ git status, o arquivo vai estar em Untracked, ainda não está sendo versionado.
