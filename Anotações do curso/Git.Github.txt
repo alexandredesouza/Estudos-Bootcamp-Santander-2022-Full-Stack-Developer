@@ -45,7 +45,9 @@ TERCEIRO PASSO: Iniciar o SSH eigen, entidade que vai ficar encarregada de pegar
 
 CLONANDO REPOSITORIO SSH: GIT BASH $ git clone colar o SSH , após mendagem dar YES, LS para ver se clonou.
 
-TOKEN: É usado no lugar da senha da sua conta ao executar operações pela linha de comando .
+TOKEN: É usado no lugar da senha da sua conta ao executar operações pela linha de comando.
+     
+      Criando Token:
 
       Ir em DEVELOPER SETTINGS
       Depois PERSONAL ACESS TOKENS
