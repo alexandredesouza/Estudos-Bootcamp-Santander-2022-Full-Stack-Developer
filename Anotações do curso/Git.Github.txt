@@ -95,7 +95,7 @@ Add Index para lista de receitas: CTRL L, para limpar
                                   CTRL L novamente
                                   $ ls
                                   $ git status, vai estar Staged pronto para commitar
-                                  $ git commit -m "adiciona index"
+                                  $ git commit -m "README.md"
                                   
 
 
