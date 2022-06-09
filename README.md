@@ -16,6 +16,13 @@ Módulos executados, certificados e anotações
 ### Módulo I
 
 - Introdução à Programação e Pensamento Computacional
+
 - Introdução ao Git e ao Github
+
 - Desafio de Projeto - Criando seu Primeiro Repositório no Github Para Compartihar seu Progresso
 
+  
+
+### Módulo II
+
+- Introdução a criação de websites com HTML5 e CCS3
