@@ -1,0 +1,72 @@
+POSICIONANDO ELEMENTOS COM FLEXBOX EM CSS
+
+      Flex Container: Ele é a TAG que envolve os itens, ou seja ela é a TAG que possui itens filhos,
+                      nela que aplicamos a propriedade "display:flex". Transforma seus filhos diretos em flex itens.
+                      
+                      Propriedades relacionadas:
+                      Display: É o inicializador do Container.
+                      Flex-direction: Ele faz o direcionamento dos itens, sejam em linhas ou colunas.
+                      Flex-wrap: Se aplica a quebra de linha.
+                      Flex-flow: É uma abreviação para o direction e o wrap.
+                      Justify-content: Alinha os itens do container de acordo  com sua direção.
+                      Align-items: Alinha os itens de acordo com o eixo do container.
+                      Align-content: Alinha as linhas do container.
+     
+      Flex item:
+
+                     Propriedades relacionadas:
+                     Flex-grow: Define o valor do crescimento.
+                     Flex-basis: Define o tamanho inicial desse item antes da distribuição do espaço restante dentro do container.
+                     Flex-shrink: Define a capacidade de redução.
+                     Flex: Abrevição para as propriedades Grow, Basis, Shrink.
+                     Order: Ordem de distribuição e listagem desses itens.
+                     Align-self: Define o alinhamento especifico dentro do container.
+
+
+    Fundamentos do Flexbox - parte 1
+
+                     Row(padrão): à direção do texto, esquerda para direita.
+                     Row(reverse): sentido oposto da direção do texto.
+                     Column: Ordenação de cima para baixo, em coluna unica.
+                     Column reverse: Ordenação inversa, de baixo para cima.
+    
+                     Variações do JUSTYFY-CONTENT
+                     Flex-start: faz o alinhamento no inicio do container.
+                     Flex-end: Ele leva todos os itens de acordo com a sobra de espaço para o final do container, respeitando o limite de coteudo
+                     que o item ocupa.
+                     Center: Traz todos os elementos ao centro do container.
+                     Space-between: cria um espaçamento igual entre os elementos. Ele vai pegar o primeiro elemento vai colocar muito próximo ao inicio
+                     desse container, ou seja próximo a borda esquerda, o elemento final ele leva para próximo ao fim desse container a direita.
+                     Space-around: Vai tornar o espaçamento duas vezes maiores que o inicial e final. 
+
+                     Tipos de Alinhamentos(ALIGN ITEMS)
+                     Center: Alinhamento dos itens ao centro.
+                     Stretch: Padrão, ele faz  com que os itens cresçam igualmente.
+                     Flex-start: Alinhamento dos itens no início, de acordo com a direção do eixo.
+                     Flex-end: Alinhamento dos itens no final do container.
+                     Baseline: Alinhamento relacionado no eixo da linha desses itens.
+       
+                     Tipos de Alinhamento( ALIGN CONTENT)
+                     Center: Alinhamento dos itens ao centro.
+                     Stretch: É o padrão e os flex itens cresçam igualmente. 
+                     Flex-start: Alinhamento dos itens no início.
+                     Flex-end: Alinhamento dos itens no final.
+                     Space-between: Que vai ter espaçamento igual entre os elementos.
+                     Space-around: Os espaçamentos do meio são duas vezes maiores que o inicial e final.
+
+    Fundamentos do Flexbox - parte 2
+
+                    Valores possíveis flex-basis
+                    Auto: Caso o item não tenha tamanho definido, este será proporcional ao conteúdo do item,
+                    se eles estiver o Flex-grow definido ele vai tentar adaptar esses itens tomando o tamanho minimo sempre igual, o plano total do container.
+                    Px,%,em,...: São valores exatos previamente definidos, vai ser o tamanho minimo que esse item vai ter.
+                    0(zero): Terá relação com a definição do flex-grow.
+
+                    Valores possíveis Align-self
+                    Auto: Valor padrão, irá respeitar a definição de align-items do container.
+                    Flex-start: Início do container.
+                    Flex-end: Ao final do container.
+                    Center: Relativo ao centro de acordo com o eixo.
+                    Stretch: Ocupa todo os espaço relativo.
+                    Baseline: Utiliza a linha base da tipografia.
+      

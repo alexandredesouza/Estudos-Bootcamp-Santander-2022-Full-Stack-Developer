@@ -26,3 +26,4 @@ Módulos executados, certificados e anotações
 ### Módulo II
 
 - Introdução a criação de websites com HTML5 e CCS3
+- Posicionando elementos com Flexbox e CSS
