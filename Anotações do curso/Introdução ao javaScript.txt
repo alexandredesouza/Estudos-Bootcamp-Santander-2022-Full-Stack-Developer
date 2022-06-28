@@ -1,0 +1,8 @@
+INTRODUÇÃO AO JAVASCRIPT
+
+      O que é o JavaScript? O JavaScript é uma linguagem interpretada, temos dois tipos de linguagens as interpretadas e as compiladas.
+      Uma linguagem interpretada significa que ela está sendo rodada em tempo real, o browser está rodando ela em tempo real e aquele código esta sendo disponibilizado para você instantaneamente
+      ao mesmo tempo que você codo ao atualizar sua página o código já vai estar lá ele não precisa ser transformado em outra coisa para o seu browser reconhecer as alterações que foram feitas.
+      Client-side: É a parte da sua aplicação que vai ter interação com o usuário.
+      ECMAScript: É como se fosse um padrão para várias linguagens, um conjunto de normas que diz quais funcionalidades estão sendo lançadas naquela linguagem.
+
