@@ -29,3 +29,4 @@ Módulos executados, certificados e anotações
 - Posicionando elementos com Flexbox e CSS
 - Recriando a página inicial do Instagram
 - Introdução ao JavaScript
+- Sintaxe e Operadores
