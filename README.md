@@ -30,3 +30,4 @@ Módulos executados, certificados e anotações
 - Recriando a página inicial do Instagram
 - Introdução ao JavaScript
 - Sintaxe e Operadores
+- Variáveis e Tipos

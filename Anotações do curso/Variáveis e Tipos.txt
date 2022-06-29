@@ -1,0 +1,29 @@
+VARIÁVEIS E TIPOS
+
+      Variáveis e Constantes
+
+      VAR e LET: Tem escopos diferentes. 
+      Hoisting: Atribui valor antes de declarar uma variável.  
+      Redeclaração: Escrever VAR ou LEt o nome da variável e igualar ela a alguma coisa, ou não igualar a nada.
+      Reatribuição: É o nome da sua variável sem a palavra reservada a frente e igualar ela a um outro valor.
+      CONSTANTES: São declaradas em SNAKE_UPPER_CASE, tem escopo de bloco, não faz hoisting.
+
+      Tipos
+  
+      Tipos primitivos: numbers, strings, boolean, null, undefined.
+      Tipos não primitivos: objects, arrays.
+      Os principais métodos da String: Concatenação,Propriedade Length, Literabilidade, formatação, index de letras.
+      Concatenação:
+      Propriedade Length: Você pode ver o tamanho do sua String.
+      Literabilidade: Você pode checar o que existe em cada indice, em cada caracter da String você pode extrair ele separadamente
+      Formatação: Você pode mudar tudo para minusculo ou maiusculo, você pode separar os espaços, separar por cada caracter.
+      Array: Pode ser um vetor ou uma tabela que o indice inicia no número 0.
+      Objetos: estrutura tipo "Chave e valor"
+      Empty, Null e Undefined: Retornam algo falso.
+      Empty: Que dizer que você declarou akela variável, núm como 0, se for uma String apenas com aspas, se for um array só inicia com os colchetes, se for objeto so inicia com as chaves, não tem nenhum valor dentro.
+      Null: Quando você quer que aquele valor de propósito seja falso, seja nulo.
+      Undefined: É um valor indefinido, ele não existe.
+      
+   
+      
+      
