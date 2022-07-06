@@ -31,5 +31,8 @@ Módulos executados, certificados e anotações.
 - Introdução ao JavaScript.
 - Sintaxe e Operadores.
 - Variáveis e Tipos.
+- Funções.
 - Coleções.
 - Map, Filter e Reduce.
+- Debugging e Error Handling.
+- JavaScript Assíncrono.
