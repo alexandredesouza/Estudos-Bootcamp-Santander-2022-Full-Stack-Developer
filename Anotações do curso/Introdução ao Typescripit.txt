@@ -1,0 +1,164 @@
+Interface: Serve para definir contratos de estrutura de dados, contratos de classes.
+Type: Para fazer junções, para fazer mergens, das interfaces para utilizarmos elas em nosso código.
+
+/*function soma(a: number, b: number) {
+    return a + b;
+}
+
+soma('a', 'b')// ele já mostra o erro.*/
+
+import { type } from "os";
+
+// types
+// interfaces
+
+interface IAnimal {
+    nome: string;
+    tipo: 'terrestre' | 'aquatico'; 
+    domestico: boolean; 
+}
+
+interface IFelino extends IAnimal {
+    visaoNoturna: boolean;
+}
+
+interface ICanino extends IAnimal {
+    porte: 'pequeno' | 'medio' | 'grande';
+}
+
+type IDomestico = IFelino | ICanino;
+
+const animal: IDomestico = {
+    domestico: true,
+    nome: 'cachorro',
+    porte: 'medio',
+    tipo: 'terrestre',
+}
+
+Tratando a tag Imput
+
+const input = document.getElementById('input') as HTMLInputElement; // Usamos as HTMLInputElement, para o DOM identificar que trata-se de um value.
+
+input.addEventListener('input', (event) => {
+    const i = event.currentTarget as HTMLInputElement;
+    console.log(i.value);
+});
+
+O que são Types genericos
+
+// Generic types
+
+
+function adicionaApenceALista<T>(array: any[], valor: T) {
+    return array.map(item => item + valor);
+}
+
+adicionaApenceALista(['a', 'b', 'c'], 'd'); // retorna qualquer tipo, string, number
+
+function adicionaApenceALista1<T>(array: T[], valor: T) {
+    return array.map(() => valor);
+}
+
+adicionaApenceALista1([1, 2, 3], 'd'); // Vai dar erro, ele espera tipos iguais
+
+Desenvolvendo condicionais a partir de parâmetros
+
+interface IUsuario {
+    id: string;
+    email: string;
+}
+
+interface IAdmin extends IUsuario {
+    cargo: 'gerente' | 'coordenador' | 'supervisor';
+}
+
+function redirecione(usuario: IUsuario | IAdmin) {
+    if('cargo' in usuario) { // o In serve para conferir se o parametro recebe os dados
+     // redirecionar para a área de administração   
+    } 
+    
+    // redirecionar para a área de usuário
+}
+
+Utilizando o caracter "?" para variáveis opcionais
+
+interface IUsuario {
+    id: string;
+    email: string;
+    cargo?: 'gerente' | 'coordenador' | 'supervisor' | 'funcionário';
+}
+
+function redirecione(usuario: IUsuario) {
+    if(usuario.cargo) {
+     // redirecionar(usuario.cargo);   
+    }
+    // redirecionar para a área do usuário
+}
+
+Criando variáveis com propriedade readonly e private
+
+interface Cachorro {
+     nome: string; 
+     idade: number;
+     parqueFavorito?: string;
+}
+
+type CachorroSomenteLeitura = {
+    +readonly[k in keyof Cachorro] - ?: Cachorro[k]; // valor só de leitura
+}
+
+class MeuCachorro implements CachorroSomenteLeitura {
+    idade;
+    nome;
+    parqueFavorito;
+
+    constructor(idade, nome) {
+        this.nome = nome;  
+        this.idade = idade;  
+    }
+}
+
+const cao = new MeuCachorro('Babalu', 1);
+
+Como importar bibliotecas com typescript
+
+Index.ts
+
+import $ from 'jquery';
+
+$.fn.extend({
+    novaFuncao() {
+        console.log('Chamou nova funcao');
+    }
+});
+
+Typings.d.ts
+
+interface JQuery {
+    novaFuncao(): void;
+}
+
+Criar novo Tsconfig tsc --init
+
+Target e Module para definir as versões.
+
+Entrar no Site do Typescripit
+
+Exemplo de como usar Omit e conclusão do curso.
+
+interface Pessoa {
+    nome: string;
+    idade: number;
+    nacionalidade: string;  
+}
+
+interface Brasileiro extends Omit<Pessoa, 'nacionalidade'> { 
+
+}
+
+const brasileiro: Brasileiro = {
+// só vai aparecer nome e idade, omitiu nacionalidade.
+}
+
+
+

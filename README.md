@@ -28,11 +28,17 @@ Módulos executados, certificados e anotações.
 - Introdução a criação de websites com HTML5 e CCS3.
 - Posicionando elementos com Flexbox e CSS.
 - Recriando a página inicial do Instagram.
-- Introdução ao JavaScript.
+- Introdução ao Javascript.
 - Sintaxe e Operadores.
 - Variáveis e Tipos.
 - Funções.
 - Coleções.
 - Map, Filter e Reduce.
 - Debugging e Error Handling.
-- JavaScript Assíncrono.
+- Fundamentos de Javascript Assíncrono.
+- Orientação a Objetos com Javascript.
+- Desafios iniciais JS - Santander Fullstack Developer.
+- Trabalhando com Módulos em Javascript.
+- Manipulando a D.O.M com Javascript.
+- Introdução ao Typescript: Explorando Classes, Tipos e Interfaces.
+- Introdução Prática ao Typescript.
