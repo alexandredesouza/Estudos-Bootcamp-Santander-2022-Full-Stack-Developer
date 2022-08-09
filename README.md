@@ -74,3 +74,20 @@ Módulos executados, certificados e material de apoio.
 + Dominando IDEs Java.
 + Variáveis, Tipos de Dados e Operadores Matemáticos em Java.
 + Entendendo Métodos Java.
++ Lógica Condicional e Controle de Fluxo em Java.
++ Estrutura de Repetição e Arrays em Java.
++ Trabalhando com Collections Java.
++ Tratamento de exceções em Java.
++ Debbuging em Java.
++ Programação Orientada a Objetos.
++ Desafios iniciais Java - Santander Fullstack Developer.
++ Criando um Banco Digital com Java e Orientação a Objetos.
+
+### Módulo V - Spring Framework
+
+- Principais Protocolos de Comunicação da Internet.
+- Introdução ao Framework Spring Boot.
+- Imersão no Spring Framework com Spring Boot.
+- Adicionando Segurança a uma API REST com Spring Security.
+- Desafios Intermediários Java - Santander Fullstack Developer.
+- Explorando Padrões e Projeto na Prática com Java.
